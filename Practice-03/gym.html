@@ -6,35 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM page</title>
     <style>
-        .headder {
-            display: flex;
-            background-color: antiquewhite;
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: white;
+
         }
 
-        .headder ul {
+        nav {
             display: flex;
-            list-style: none;
-            padding: 10px;
-            
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(99, 112, 124, 0.479);
+            /* height: 7vh; */
+            padding: 15px;
 
+        }
+
+        .right ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        .right ul li {
+            list-style: none;
+
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        span {
+            color: orangered;
+        }
+
+        .nav {
+            font-size: 26px;
+            letter-spacing: -2px;
+            font-weight: 800;
+
+
+        }
+
+        .sign {
+            background-color: orangered;
+            padding: 7px;
+            margin: 0px 0px 0px 19px;
+            height: 30px;
+            width: 75px;
+            border: none;
+            font-size: 12px;
+            font-weight: bold;
+
+
+        }
+
+        body {
+            background-image: url(https://png.pngtree.com/background/20230610/original/pngtree-the-gym-scene-where-people-are-sitting-in-a-gym-picture-image_3108802.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+            /* background: linear-gradient(rgba(99, 60, 60, 0.664) rgba(209, 43, 43, 0.658)); */
+
+        }
+        
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .work {
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: -1px;
+            font-weight: bold;
+        }
+
+        .middle {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 4px;
+
+
+        }
+
+        .member {
+            border: none;
+            background-color: orangered;
+            height: 25px;
+            width: 195px;
+            font-size: 12px;
+            font-weight: bold;
+            word-spacing: 2px;
+        }
+        .mid-text{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div class="headder">
-        <h2>
-            TRAINING STUDIO
-        </h2>
-        <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>CLASSES</li>
-            <li>SCHEDULE</li>
-            <li>CONTACT</li>
-            <button>signup</button>
-        </ul>
-    </div>
+    <header>
+        <nav>
+            <div class="nav">
+                training <span>studio</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>classes</li>
+                    <li>schedule</li>
+                    <li>contact</li>
+                </ul>
+                <button class="sign">sign up</button>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="mid-text">
+
+            <p class="work">work harder , get stronger</p>
+            <p class="middle">easy with our <span>gym</span></p>
+            <button class="member">become a member</button>
+        </div>
+        </main>
 </body>
 
 </html>
