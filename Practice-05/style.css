@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.12)),url(https://www.colliers.com/-/media/images/colliers/asia/indonesia/research-report-card/hero-2023/property-report-bali-hotel-2023-1536-x-1040.ashx?bid=dcf30b27f70e49b2bf181d565a3c201f);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+width: 100%;
+height: 100px;
+display:flex ;
+justify-content: space-around;
+align-items: center;
+color: white;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px ;
+    font-size: 15px;
+    position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid orangered;
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.reg a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: orangered;
+    border-radius: 10px;
+    font-size: 13px;
+}
+.reg a:hover{
+    background: transparent;
+    border: 1px solid orangered;
+
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+}
+.text span{
+    font-size: 15px;
+    letter-spacing: 4px;
+
+}
+.text h1{
+    font-size: 60px;
+}
+.text a{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding:9px ;
+    font-size: 14px;
+    border-radius: 9px;
+    
+}
+.text a:hover{
+    background: transparent;
+    border: 1px solid orangered;
+}
