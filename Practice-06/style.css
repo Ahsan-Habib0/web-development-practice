@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    padding: 25px 40px;
+    z-index: 1;
+}
+.logo{
+    font-size: 3rem;
+    color: white;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 38px;
+    border-radius: 15px;
+    
+}
+.menu ul li a:hover{
+    background-color: rgba(14, 112, 112, 0.479);
+    
+}
+.middle{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.middle h1{
+    font-size: 50px;
+    color: rgba(186, 239, 248, 0.733);
+}
+.middle span{
+    color: rgba(255, 255, 255, 0.568);
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+.middle a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background: rgb(23, 94, 70);
+    border-radius: 8px;
+    display: inline-block;
+}
+.middle a:hover{
+    background: rgb(6, 109, 109);
+}
